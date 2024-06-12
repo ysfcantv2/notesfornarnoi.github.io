@@ -18,4 +18,4 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-console.log("Burayı açmayı düşündüysen daha site açılmadan ufak bir not bırakmış olayım.")
+console.log("Burayı açmayı düşündüysen daha site açılmadan ufak bir not bırakmış olayım.Gerçekten hayatımdaki özel insanlardan birisin ve bunun kolay kolay değişeceğini hiç sanmıyorum.Her koşulda ve her zaman etrafımda bulunmanı her şeyden çok isteyeceğim birisin.Lütfen kendini hiçbir şey için üzmemeye çalış olur da üzülürsen de hayatında ne olursa olsun saat zaman farketmez saniyesinde yanında olacağımı bil ve kendine lütfen çok dikkat et")
