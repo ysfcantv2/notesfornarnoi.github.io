@@ -11,7 +11,6 @@ function okuMektup(index) {
     const modalIcerik = document.getElementById('modal-icerik');
     modalBaslik.textContent = mektuplar[index - 1].baslik;
     modalIcerik.textContent = mektuplar[index - 1].icerik;
-    document.getElementById("detayliResim").src = mektuplar[index - 1].resim;
     modal.style.display = 'block';
 }
 
