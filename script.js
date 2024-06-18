@@ -1,21 +1,42 @@
-var countDownDate = new Date("June 18, 2024 08:00:00").getTime();
+const mektuplar = [
+    { baslik: "İyi ki Doğdun ec!!!",icerik: "Her şeyden ve herkesten önce iyi ki doğdun ecrinim ay 18 olduk artık.Umarım sonraki yaşında da kim ne derse desin veya ne yaşanırsa yaşansın yine de gökyüzünde parlayan kocaman bir yıldız gibi ışığını ve güzelliğini hiç kaybetmezsin.Aynı zamanda etrafının kendini açıklamanın gerekmediği ve sana bir ayna gibi ne kadar özel olduğunu hissettiren insanlarla dolu olduğu bir yıl daha olur.Son olarak da umarım yeni yaşının her günü çok güzel bir masalın bölümleri gibi geçer de günün sonunda gelip buraya yazmak istersin.Çünkü HER DETAYI OKUMAYI VE GÜNÜN SONUNDA GELİP YİNE SENİNLE BULUŞABİLMEYİ İNANILMAZ ÇOK İSTERİM.Okumamı istemezsen de gizli bir şekilde yazıp içini dökebileceğin bir özelliği olacak sitenin.KISACASI NE KADAR SÖYLERSEM SÖYLEYEYİM ANLATAMAYACAKMIŞIM GİBİ HİSSEDİYORUM AMA TÜM İÇTENLİĞİMLE SÖYLÜYORUM İYİ Kİ VARSIN İYİ Kİ DOĞDUN SUPERSTAR DAHA NİCE MUTLU,SEVGİ DOLU VE BERABER YILLARA ÇOK ÇOK ÖPÜLDÜN VE ÇOK SEVİLİYORSUN!!!"},
+    { baslik: "Mektup to Ec",resim:"screen.jfif",icerik: "Umarım günün güzel başlamıştır veya mektubu günün sonunda okuyorsan güzel bi günün sonunda dinleniyorsundur.Normalde bu mektupların hepsini veya siteyi çok daha önce bitirecektim ama yani bir türlü kafamı toplayamadım.Özellikle mezuniyetten sonra gerçekten birkaç gün sadece oturup düşündüm son 2 yıldır geçirdiğim en güzel ve en kötü hafta sanırım.(Mezuniyet gecesini de Rüzgar ile beraber parçaladınız bu arada.Biriniz gecenin en güzeli diğeri en yakışıklısı süper ikili olmuştunuz).Hep dediğim gibi hayatıma giren herkes bir kenara genelde çok umrumda olmaz birilerinden vazgeçmek ama konu sen olunca sadece düşüncesi bile birkaç saat kilitliyor beni.Söylenebilecek çok fazla şey var ama şu an gerçekten tüm bu cümleleri veya duyguları birleştirip ortaya fırlatmak da istemiyorum.Sadece umarım ilerde bizi ne bekliyor olursa olsun yine de beraber oluruz.Günün sonunda yine senin anlatmayı sevdiğin planlarını veya gününün nasıl geçtiğini dinlemeyi her şeyden çok istiyorum.Kötü hissettiğinde de belki hiçbir işe yaramasa da iyi hissedene kadar yanında olabilmeyi de aynı şekilde istiyorum.Aradan ne kadar zaman geçerse geçsin bu mektupta dediklerim konusunda fikrim hep aynı.Benim için hep en ince düşünen,konuşmaktan en keyif aldığım,en özel ve gördüğüm en güzel olacaksın.Elimde olsa geçmişe gidip sana aksini hissettiren olayları da düzelmeyi çok isterdim ama bazen maalesef.Muhtemelen vazgeçip birkaç saat sonra bu mektubu sileceğim ama yine de şimdi sadece söylemek istediklerimi söyleyeyim.Seni çok seviyorum ve lütfen kendine çok dikkat et.Hiç kopmadığımız nice mutlu senelere"},
+    { baslik: "TEŞEKKUR EDERİM!!!",resim:"ily.jfif",icerik: "Varlığın için,hayatımda olduğun için beraber yaşadığımız ve yaşayacağımız her şey için şimdiden kocaman TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLERTEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLERTEŞEKKÜRLERTEŞEKKÜRLERTEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLERTEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLERTEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLERTEŞEKKÜRLERTEŞEKKÜRLERTEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLERTEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLERTEŞEKKÜRLERTEŞEKKÜRLERTEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER TEŞEKKÜRLER"}
+];
 
-var x = setInterval(function() {
+// Oku butonuna tıklandığında modalı açacak işlev
+function okuMektup(index) {
+    const modal = document.getElementById('mektupModal');
+    const modalBaslik = document.getElementById('modal-baslik');
+    const modalIcerik = document.getElementById('modal-icerik');
+    modalBaslik.textContent = mektuplar[index - 1].baslik;
+    modalIcerik.textContent = mektuplar[index - 1].icerik;
+    document.getElementById("detayliResim").src = mektuplar[index - 1].resim;
+    modal.style.display = 'block';
+}
 
-  var now = new Date().getTime();
+// Modalı kapatan işlev
+function kapatModal() {
+    const modal = document.getElementById('mektupModal');
+    modal.style.display = 'none';
+}
 
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// Ekranda bir yere tıkladığında modalı kapat
+window.onclick = function(event) {
+    const modal = document.getElementById('mektupModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
-  document.getElementById("count").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("count").innerHTML = "EXPIRED";
-  }
-}, 1000);
+function yusfSelect(){
+  document.getElementById("profile").remove();
+  document.getElementById("container").style.visibility = "visible";
+}
 
-console.log("Burayı açmayı düşündüysen daha site açılmadan ufak bir not bırakmış olayım.Gerçekten hayatımdaki özel insanlardan birisin ve bunun kolay kolay değişeceğini hiç sanmıyorum.Her koşulda ve her zaman etrafımda bulunmanı her şeyden çok isteyeceğim birisin.Lütfen kendini hiçbir şey için üzmemeye çalış olur da üzülürsen de hayatında ne olursa olsun saat zaman farketmez saniyesinde yanında olacağımı bil ve kendine lütfen çok dikkat et");
+function ecSelect(){
+  document.getElementById("profile").remove();
+  document.getElementById("container").style.visibility = "visible";
+  alert("AYAYAYAYAYAYAY HOSGELDİN EC <3");
+}
+

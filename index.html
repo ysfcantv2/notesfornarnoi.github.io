@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bekle Ec!</title>
+	<title>İyi ki varsın Ec!</title>
 	<link rel="stylesheet" href="style.css">
 	<script src = "script.js"></script>
 </head>
 
 <body>
-	<div class = "all" id = "all">
-	<div class = "avatar" id = "avatar">
-	<img src = "avatar.png" alt="hanimefendi_avatar">
+	<div class = "profile" id = "profile">
+		<div class = "yusf" id = "yusf">
+			<img class = "yusf_avatar" id = "yusf_avatar" src = "avatarben.png"/>
+			<h2 class = "yusf_name" id = "yusf_name">analogcu05</h2>
+			<button class = "yusf_select" id = "yusf_select" onclick="yusfSelect()">Seç</button>
+		</div>
+		<div class = "ec" id = "ec">
+			<img class = "ec_avatar" id = "ec_avatar" src = "avatar.png"/>
+			<h2 class = "ec_name" id = "ec_name">narnoi</h2>
+			<button class = "ec_select" id = "ec_select" onclick="ecSelect()">Seç</button>
+		</div>
 	</div>
-	<h1>Bu site doğum gününde tam 00.00'da otomatik olarak açılacak (mezuniyet sonrası yogun duygular sonucu elim kolum bağlandığı için hiçbir şey yapamadım simdi hallediyorum)</h1>
-	<h2 class = "count" id = "count"></h2>
-	</div>
+
+	<div class="container" id = "container">
+        <div class="mektup">
+            <h2>İyi ki Doğdun ec!!!</h2>
+            <p>AY KOCAMAN OLDUN ELİMDE BÜYÜDÜN</p>
+            <button class="oku-btn" onclick="okuMektup(1)">Oku</button>
+        </div>
+        <div class="mektup">
+            <h2>Mektup to Ec</h2>
+            <p>öyle iste</p>
+            <button class="oku-btn" onclick="okuMektup(2)">Oku</button>
+        </div>
+        <div class="mektup">
+            <h2>TESEKKUR EDERİM!!!</h2>
+            <p>TESEKKUR EDERİM TESEKKUR EDERİM TESEKKUR EDERİM TESEKKUR EDERİM TESEKKUR EDERİM TESEKKUR EDERİM TESEKKUR EDERİM</p>
+            <button class="oku-btn" onclick="okuMektup(3)">Oku</button>
+        </div>
+    </div>
+
+    <div class="modal" id="mektupModal">
+        <div class="modal-content">
+            <span class="close" onclick="kapatModal()">&times;</span>
+            <h2 id="modal-baslik"></h2>
+			<img class = "detayliResim" id="detayliResim" src="" alt="Mektup Resmi">
+            <p id="modal-icerik"></p>
+        </div>
+    </div>
 </body>
 </html>
